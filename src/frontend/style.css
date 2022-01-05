@@ -1,0 +1,106 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(39, 19, 2);
+    color:white
+}
+
+h1{
+    text-align: center;
+    position:fixed;
+    width:100%;
+    top:0;
+    background-color: rgb(20, 16, 24);
+    padding:10px 0 ;
+   
+}
+
+#container {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top : 5rem;
+
+}
+
+
+
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-left: 400px;
+
+}
+
+.movie-poster {
+    width:30rem;
+    height: auto;
+}
+.movie-container * {
+    margin:5px;
+}
+
+#edit-form {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:20rem;
+}
+
+#producer-section {
+    position: fixed;
+    top:7rem;
+    left : 12rem;
+}
+
+#producer-heading {
+    color:white;
+    position: fixed;
+    top:6rem;
+    left : 12rem;
+    
+}
+
+
+#producer-add-form {
+    position: fixed;
+    top: 10rem;
+    left:12rem;
+}
+
+#actor-section {
+    position: fixed;
+    top:21rem;
+    left : 12rem;
+}
+
+#actor-heading {
+    color:white;
+    position: fixed;
+    top:19rem;
+    left : 12rem;
+    
+}
+
+
+#actor-add-form {
+    position: fixed;
+    top: 25rem;
+    left:12rem;
+}
+
+#actorsBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

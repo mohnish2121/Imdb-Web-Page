@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Imdb</h1>
+    <div id = "container">
+        <div id = "form-section">
+            <form>
+                <h3>Add new Movie</h3>
+                <input id = "name-input" type = "text" placeholder="Enter Movie name">
+                <input id = "poster-input" type = "text" placeholder="Enter poster url">
+                <input id = "year-input" type = "number" placeholder="Release year">
+                <input id = "plot-input" type = "text" placeholder="Enter movie plot">
+                <input id = "submit-btn" type = "submit">
+            </form >
+                
+            <form id = "edit-form">
+                <h3>Edit Movie</h3>
+                <input id = "name-edit" type = "text" placeholder="Enter Movie name">
+                <input id = "poster-edit" type = "text" placeholder="Enter poster url">
+                <input id = "year-edit" type = "number" placeholder="Release year">
+                <input id = "plot-edit" type = "text" placeholder="Enter movie plot">
+                <button disabled id = "edit">edit</button>
+            </form>
+        </div>
+
+        <div>
+            <h4 id = "producer-heading">Producers</h4>
+            <select id = "producer-section">
+                <!-- <option value="12">1</option>
+                <option value="23">2</option>
+                <option value="34">3</option> -->
+            </select>
+
+            
+            <form id = "producer-add-form">
+                <h4 id = "add-producer">Add new producer</h4>
+                <input id = "new-producer-name" type = "text" placeholder="Enter name" required>
+                <input id = "new-producer-sex" type = "text" placeholder="Enter sex">
+                <input id = "new-producer-dob" type = "text" placeholder="dob">
+                <input id = "new-producer-bio" type = "text" placeholder="bio">
+                <button id = "add-new-producer-btn">add</button>
+            </form>
+        </div>
+
+        <div>
+            <h4 id = "actor-heading">Actors</h4>
+            <select multiple size="3" id = "actor-section">
+                <!-- <option value="12">1</option>
+                <option value="23">2</option>
+                <option value="34">3</option> -->
+            </select>
+          
+
+            
+            <form id = "actor-add-form">
+                <h4 id = "add-actor">Add new actor</h4>
+                <input id = "new-actor-name" type = "text" placeholder="Enter name" required>
+                <input id = "new-actor-sex" type = "text" placeholder="Enter sex">
+                <input id = "new-actor-dob" type = "text" placeholder="dob">
+                <input id = "new-actor-bio" type = "text" placeholder="bio">
+                <button id = "add-new-actor-btn">add</button>
+            </form>
+        </div>
+
+        <main id = "main">
+            <!-- <div class = "movie-container">
+                <img class = "movie-poster" src = "https://mcdn.wallpapersafari.com/medium/15/23/UWH86b.jpg">
+                <h2 class = "movie-name">Rockstar</h2>
+                <h4 class = "movie-year">2014</h4>
+                <p class = "movie-plot">nice movie</p>
+                
+                <button >Delete</button>
+                <button >edit info</button>
+            </div> -->
+            
+        </main>
+    </div>
+    <script src="indexCopy.js"></script>
+</body>
+</html>
