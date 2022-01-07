@@ -9,21 +9,24 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MovieDetailsService {
-    private MovieController movieController;
-    private ActorController actorController;
-    private ProducerController producerController;
+    private MovieService movieService;
+    private ActorService actorService;
+    private ProducerService producerService;
 
     @Autowired
-    public MovieDetailsService(MovieController movieController, ActorController actorController, ProducerController producerController) {
-        this.movieController = movieController;
-        this.actorController = actorController;
-        this.producerController = producerController;
+    public MovieDetailsService( MovieService movieService,
+                                ActorService actorService,
+                                ProducerService producerService ) {
+
+        this.movieService = movieService;
+        this.actorService = actorService;
+        this.producerService = producerService;
     }
 
     public MovieDetails getAllDetails() {
-        return new MovieDetails(movieController.getAllMovie(),
-                actorController.getAllActors(),
-                producerController.getAllProducers());
+        return new MovieDetails(movieService.getAllMovies(),
+                actorService.getAllActors(),
+                producerService.getAllProducers());
 
     }
 }
